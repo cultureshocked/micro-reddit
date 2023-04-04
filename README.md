@@ -1,24 +1,7 @@
-# README
+# micro-reddit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was made to develop familiarity with RoR's ActiveRecord, and practice creating MVP Rails apps.
 
-Things you may want to cover:
+It was built with Ruby 3.2.1 and Rails 7.0.4.3
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+There are no other dependencies aside from `turbo-rails` and the rest of the Hotwire suite. Use the `Gemfile` and `bundle install` if required.
