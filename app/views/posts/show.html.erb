@@ -1,0 +1,15 @@
+<h1><%= link_to "micro-reddit", root_path %></h1>
+
+<h3><%= @post.title %></h3>
+<h6>By: <%= link_to @post.user.username, @post.user %></h6>
+<h6>Posted: <%= @post.created_at.to_fs(:long) %></h6>
+
+<p><%= @post.body %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_post_path(@post) %></li>
+  <li><%= link_to "Delete", post_path(@post), data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+  } %></li>
+</ul>

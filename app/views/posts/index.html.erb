@@ -1,0 +1,10 @@
+<h1><%= link_to "micro-reddit", root_path %></h1>
+
+<% @posts.each do |post| %>
+  <div class="card">
+    <%= link_to post.title, post %>
+    <p>By: <%= link_to post.user.username, post.user %>, <%= post.created_at.to_fs(:long) %></p>
+  </div>
+<% end %>
+
+<%= link_to "New post", new_post_path %>
